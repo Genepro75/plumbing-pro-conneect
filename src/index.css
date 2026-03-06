@@ -23,9 +23,9 @@
   --gray-800: #1f2937;
   --gray-900: #111827;
   
-  --glass-primary: rgba(255, 255, 255, 0.7);
-  --glass-secondary: rgba(255, 255, 255, 0.5);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-primary: rgba(255, 255, 255, 0.1);
+  --glass-secondary: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.15);
   
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -37,12 +37,28 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecf1 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   color: var(--gray-900);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(0, 102, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(52, 199, 89, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 59, 48, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 html, body, #root {
@@ -50,10 +66,16 @@ html, body, #root {
   height: 100%;
 }
 
+#root {
+  position: relative;
+  z-index: 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  color: white;
 }
 
 h1 {

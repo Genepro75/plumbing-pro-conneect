@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Users, TrendingUp, Shield } from 'lucide-react';
+import { Wrench, Droplets, Gauge, Shield, CheckCircle, Award } from 'lucide-react';
 import '../styles/home.css';
 
 export default function Home() {
@@ -18,9 +18,15 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="hero-graphic animate-slide-in-right">
-            <div className="graphic-card card-1">🔧</div>
-            <div className="graphic-card card-2">⭐</div>
-            <div className="graphic-card card-3">💼</div>
+            <div className="graphic-card card-1">
+              <Wrench size={60} strokeWidth={1.5} />
+            </div>
+            <div className="graphic-card card-2">
+              <Droplets size={50} strokeWidth={1.5} />
+            </div>
+            <div className="graphic-card card-3">
+              <Gauge size={55} strokeWidth={1.5} />
+            </div>
           </div>
         </div>
       </section>
@@ -34,37 +40,49 @@ export default function Home() {
 
         <div className="features-grid">
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">🎯</div>
+            <div className="feature-icon">
+              <CheckCircle size={48} strokeWidth={1.5} />
+            </div>
             <h3>Verified Professionals</h3>
             <p>All plumbers are certified and verified. Trust is built into every interaction.</p>
           </div>
 
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">💰</div>
+            <div className="feature-icon">
+              <Droplets size={48} strokeWidth={1.5} />
+            </div>
             <h3>Fair Pricing</h3>
             <p>Transparent bidding system ensures competitive rates for quality work.</p>
           </div>
 
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">🧠</div>
+            <div className="feature-icon">
+              <Wrench size={48} strokeWidth={1.5} />
+            </div>
             <h3>Knowledge Hub</h3>
             <p>Technical forum for plumbers to share expertise and solve problems together.</p>
           </div>
 
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">🔐</div>
+            <div className="feature-icon">
+              <Shield size={48} strokeWidth={1.5} />
+            </div>
             <h3>Secure Payments</h3>
             <p>M-Pesa integration for safe, easy transactions with built-in protection.</p>
           </div>
 
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">⚡</div>
+            <div className="feature-icon">
+              <Gauge size={48} strokeWidth={1.5} />
+            </div>
             <h3>Real-time Updates</h3>
             <p>Instant notifications and live chat keep everyone connected and informed.</p>
           </div>
 
           <div className="feature-card glass-sm animate-fade-in-up">
-            <div className="feature-icon">📈</div>
+            <div className="feature-icon">
+              <Award size={48} strokeWidth={1.5} />
+            </div>
             <h3>Growth Tools</h3>
             <p>Build your reputation with ratings, reviews, and a professional portfolio.</p>
           </div>

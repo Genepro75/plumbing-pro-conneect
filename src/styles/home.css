@@ -45,7 +45,7 @@
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -53,7 +53,7 @@
 
 .hero-content p {
   font-size: 1.25rem;
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: var(--spacing-xl);
   line-height: 1.8;
 }
@@ -83,15 +83,15 @@
 
 .graphic-card {
   position: absolute;
-  font-size: 4rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--glass-primary);
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.2) 0%, rgba(52, 199, 89, 0.15) 100%);
   backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 102, 255, 0.3);
+  color: #60a5fa;
 }
 
 .card-1 {
@@ -132,7 +132,7 @@
 
 .section-header p {
   font-size: 1.1rem;
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.7);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -152,13 +152,16 @@
 
 .feature-card:hover {
   transform: translateY(-8px);
-  background: var(--glass-primary);
-  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.15);
+  background: rgba(0, 102, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.3);
+  border: 1px solid rgba(0, 102, 255, 0.3);
 }
 
 .feature-icon {
-  font-size: 3rem;
   margin-bottom: var(--spacing-md);
+  color: #60a5fa;
+  display: flex;
+  justify-content: center;
 }
 
 .feature-card h3 {
@@ -167,7 +170,7 @@
 }
 
 .feature-card p {
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -197,7 +200,7 @@
 }
 
 .stat-label {
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
 }
 
@@ -251,7 +254,7 @@
 }
 
 .process-card p {
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
 }
 
@@ -275,7 +278,7 @@
 
 .cta p {
   margin-bottom: var(--spacing-lg);
-  color: var(--gray-600);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.1rem;
 }
 

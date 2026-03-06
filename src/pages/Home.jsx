@@ -17,15 +17,51 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="hero-graphic animate-slide-in-right">
-            <div className="graphic-card card-1">
-              <Wrench size={60} strokeWidth={1.5} />
+          <div className="hero-image-container animate-slide-in-right">
+            <img 
+              src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=600&h=600&fit=crop" 
+              alt="Professional plumber at work"
+              className="hero-image"
+            />
+            <div className="hero-overlay">
+              <div className="overlay-icon">
+                <Wrench size={40} strokeWidth={2} />
+              </div>
             </div>
-            <div className="graphic-card card-2">
-              <Droplets size={50} strokeWidth={1.5} />
+          </div>
+        </div>
+      </section>
+
+      {/* Plumbing Work Gallery */}
+      <section className="work-gallery">
+        <h2 className="section-title">Professional Plumbing Services</h2>
+        <div className="gallery-grid">
+          <div className="gallery-item glass-sm">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop" alt="Pipe installation" />
+            <div className="gallery-overlay">
+              <h3>Pipe Installation</h3>
+              <p>Expert pipe fitting and installation</p>
             </div>
-            <div className="graphic-card card-3">
-              <Gauge size={55} strokeWidth={1.5} />
+          </div>
+          <div className="gallery-item glass-sm">
+            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400&h=300&fit=crop" alt="Bathroom plumbing" />
+            <div className="gallery-overlay">
+              <h3>Bathroom Plumbing</h3>
+              <p>Complete bathroom fixture installation</p>
+            </div>
+          </div>
+          <div className="gallery-item glass-sm">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop" alt="Water heater" />
+            <div className="gallery-overlay">
+              <h3>Water Heaters</h3>
+              <p>Installation and repair services</p>
+            </div>
+          </div>
+          <div className="gallery-item glass-sm">
+            <img src="https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=400&h=300&fit=crop" alt="Drain cleaning" />
+            <div className="gallery-overlay">
+              <h3>Drain Services</h3>
+              <p>Professional drain cleaning</p>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MapPin, DollarSign, Briefcase, Plus, Filter } from 'lucide-react';
+import { Search, MapPin, Briefcase, Plus } from 'lucide-react';
 import useStore from '../store';
 import '../styles/jobs.css';
 
 export default function Jobs() {
-  const [jobs, setJobs] = useState([
+  const [jobs] = useState([
     {
       id: 1,
       title: 'Emergency Pipe Repair - Westlands',
@@ -58,7 +58,7 @@ export default function Jobs() {
   const { isAuthenticated } = useStore();
 
   useEffect(() => {
-    let filtered = jobs;
+    let filtered = [...jobs];
 
     if (searchTerm) {
       filtered = filtered.filter(job =>

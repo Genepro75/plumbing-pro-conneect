@@ -4,7 +4,7 @@ import { MessageCircle, ThumbsUp, Eye, Plus, TrendingUp } from 'lucide-react';
 import '../styles/forum.css';
 
 export default function Forum() {
-  const [posts, setPosts] = useState([
+  const [posts] = useState([
     {
       id: 1,
       title: 'Best practices for preventing frozen pipes in winter',

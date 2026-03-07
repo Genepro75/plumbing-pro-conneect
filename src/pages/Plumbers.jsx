@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MapPin, Award, MessageCircle, Star } from 'lucide-react';
+import { Search, MapPin, MessageCircle, Star } from 'lucide-react';
 import '../styles/plumbers.css';
 
 export default function Plumbers() {
-  const [plumbers, setPlumbers] = useState([
+  const [plumbers] = useState([
     {
       id: 1,
       name: 'James Kipchoge',
@@ -64,7 +64,7 @@ export default function Plumbers() {
   const [sortBy, setSortBy] = useState('rating');
 
   useEffect(() => {
-    let filtered = plumbers;
+    let filtered = [...plumbers];
 
     if (searchTerm) {
       filtered = filtered.filter(plumber =>

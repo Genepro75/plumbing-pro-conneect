@@ -85,7 +85,7 @@ export default function Plumbers() {
     }
 
     setFilteredPlumbers(filtered);
-  }, [searchTerm, sortBy]);
+  }, [searchTerm, sortBy, plumbers]);
 
   return (
     <div className="plumbers-page">

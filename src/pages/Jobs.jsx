@@ -72,7 +72,7 @@ export default function Jobs() {
     }
 
     setFilteredJobs(filtered);
-  }, [searchTerm, filterType]);
+  }, [searchTerm, filterType, jobs]);
 
   return (
     <div className="jobs-page">
